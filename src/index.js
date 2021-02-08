@@ -1,11 +1,16 @@
-import React from 'react';
+import React, {Suspense, lazy} from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import './styles/tailwind.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {createStore} from 'redux';
+
+//STORE
+
 
 ReactDOM.render(
   <React.StrictMode>
+    <div className='m-0'></div>
     <App />
   </React.StrictMode>,
   document.getElementById('root')
